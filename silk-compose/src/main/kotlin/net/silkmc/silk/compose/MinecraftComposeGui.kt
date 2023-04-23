@@ -237,7 +237,7 @@ class MinecraftComposeGui(
                                 orCreateTag.putInt("map", guiChunk.mapId)
                             }
                             itemFrame.setItem(composeStack, false)
-                            connection.send(ClientboundSetEntityDataPacket(itemFrame.id, itemFrame.entityData, true))
+                            connection.send(ClientboundSetEntityDataPacket(itemFrame.id, itemFrame.entityData.packDirty() ?: return@launch))
 
                             connection.send(guiChunk.createClearPacket())
                         }

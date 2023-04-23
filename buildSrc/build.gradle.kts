@@ -17,14 +17,14 @@ repositories {
 dependencies {
     fun pluginDep(id: String, version: String) = "${id}:${id}.gradle.plugin:${version}"
 
-    val kotlinVersion = "1.7.10"
+    val kotlinVersion = "1.8.20"
 
     compileOnly(kotlin("gradle-plugin", embeddedKotlinVersion))
     runtimeOnly(kotlin("gradle-plugin", kotlinVersion))
     compileOnly(pluginDep("org.jetbrains.kotlin.plugin.serialization", embeddedKotlinVersion))
     runtimeOnly(pluginDep("org.jetbrains.kotlin.plugin.serialization", kotlinVersion))
 
-    implementation(pluginDep("fabric-loom", "0.13-SNAPSHOT"))
+    implementation(pluginDep("fabric-loom", "1.0-SNAPSHOT"))
     implementation(pluginDep("io.github.juuxel.loom-quiltflower", "1.7.3"))
     implementation(pluginDep("com.matthewprenger.cursegradle", "1.4.0"))
     implementation(pluginDep("com.modrinth.minotaur", "2.3.1"))

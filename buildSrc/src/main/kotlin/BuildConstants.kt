@@ -1,2 +1,2 @@
 val githubRepo = "SilkMC/silk-compose"
-val minecraftVersion = "1.19.2"
+val minecraftVersion = "1.19.4"

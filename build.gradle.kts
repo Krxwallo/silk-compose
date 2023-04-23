@@ -2,8 +2,8 @@ import org.jetbrains.dokka.gradle.DokkaMultiModuleTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("com.google.devtools.ksp") version "1.7.10-1.0.6" apply false
-    id("org.jetbrains.compose") version "1.2.0-beta01" apply false
+    id("com.google.devtools.ksp") version "1.8.20-1.0.11" apply false
+    id("org.jetbrains.compose") version "1.4.0" apply false
     id("org.jetbrains.dokka")
 }
 
@@ -16,7 +16,7 @@ allprojects {
     }
 
     group = "net.silkmc"
-    version = "1.0.4"
+    version = "1.0.5"
 
     description = "Silk Compose brings Kotlin compose-jb to Minecraft"
 
