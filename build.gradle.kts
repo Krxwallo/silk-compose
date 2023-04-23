@@ -9,6 +9,7 @@ plugins {
 
 allprojects {
     repositories {
+        mavenLocal()
         mavenCentral()
         google()
         maven("https://androidx.dev/storage/compose-compiler/repository")
